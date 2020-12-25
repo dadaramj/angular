@@ -1,0 +1,18 @@
+<p>admin works!</p>
+
+{{ "Welcome: " + username }}
+<hr />
+
+<table border="1">
+  <tr>
+    <td>username</td>
+    <td>salary</td>
+    <td>age</td>
+  </tr>
+
+  <tr *ngFor="let u of users | async">
+    <td>{{ u.username }}</td>
+    <td>{{ u.salary }}</td>
+    <td>{{ u.age }}</td>
+  </tr>
+</table>
